@@ -1,0 +1,821 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0722C2C73F8595327988A21E /* Pods_Disable_JavaScript.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 63553DF9EC406E6E09B4D215 /* Pods_Disable_JavaScript.framework */; };
+		A2A6976B4BDB539E87E05FFD /* Pods_DisableJavascriptBlocker.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 86F3A2DAC0D4004D7C061272 /* Pods_DisableJavascriptBlocker.framework */; };
+		FCD6C7D825CBE6BA00C34902 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FCFDA82825CBBE8B00FAF149 /* Cocoa.framework */; };
+		FCD6C7DB25CBE6BA00C34902 /* blockerList.json in Resources */ = {isa = PBXBuildFile; fileRef = FCD6C7DA25CBE6BA00C34902 /* blockerList.json */; };
+		FCD6C7DD25CBE6BA00C34902 /* ContentBlockerRequestHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCD6C7DC25CBE6BA00C34902 /* ContentBlockerRequestHandler.swift */; };
+		FCD6C7E225CBE6BA00C34902 /* DisableJavascriptBlocker.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = FCD6C7D725CBE6BA00C34902 /* DisableJavascriptBlocker.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		FCFDA81625CBBE8300FAF149 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCFDA81525CBBE8300FAF149 /* AppDelegate.swift */; };
+		FCFDA81925CBBE8300FAF149 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FCFDA81725CBBE8300FAF149 /* Main.storyboard */; };
+		FCFDA81B25CBBE8300FAF149 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCFDA81A25CBBE8300FAF149 /* ViewController.swift */; };
+		FCFDA81D25CBBE8A00FAF149 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FCFDA81C25CBBE8A00FAF149 /* Assets.xcassets */; };
+		FCFDA82425CBBE8B00FAF149 /* Disable JavaScript Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = FCFDA82325CBBE8B00FAF149 /* Disable JavaScript Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		FCFDA82925CBBE8B00FAF149 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FCFDA82825CBBE8B00FAF149 /* Cocoa.framework */; };
+		FCFDA82C25CBBE8B00FAF149 /* SafariWebExtensionHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCFDA82B25CBBE8B00FAF149 /* SafariWebExtensionHandler.swift */; };
+		FCFDA84A25CBBE9000FAF149 /* background in Resources */ = {isa = PBXBuildFile; fileRef = FCFDA83925CBBE9000FAF149 /* background */; };
+		FCFDA84B25CBBE9000FAF149 /* push-to-mobile.sh in Resources */ = {isa = PBXBuildFile; fileRef = FCFDA83A25CBBE9000FAF149 /* push-to-mobile.sh */; };
+		FCFDA84C25CBBE9000FAF149 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = FCFDA83B25CBBE9000FAF149 /* LICENSE */; };
+		FCFDA84D25CBBE9000FAF149 /* create-packages.sh in Resources */ = {isa = PBXBuildFile; fileRef = FCFDA83C25CBBE9000FAF149 /* create-packages.sh */; };
+		FCFDA84E25CBBE9000FAF149 /* manifest-gecko.json in Resources */ = {isa = PBXBuildFile; fileRef = FCFDA83D25CBBE9000FAF149 /* manifest-gecko.json */; };
+		FCFDA84F25CBBE9000FAF149 /* node_modules in Resources */ = {isa = PBXBuildFile; fileRef = FCFDA83E25CBBE9000FAF149 /* node_modules */; };
+		FCFDA85025CBBE9000FAF149 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = FCFDA83F25CBBE9000FAF149 /* README.md */; };
+		FCFDA85125CBBE9000FAF149 /* package-lock.json in Resources */ = {isa = PBXBuildFile; fileRef = FCFDA84025CBBE9000FAF149 /* package-lock.json */; };
+		FCFDA85225CBBE9000FAF149 /* package.json in Resources */ = {isa = PBXBuildFile; fileRef = FCFDA84125CBBE9000FAF149 /* package.json */; };
+		FCFDA85325CBBE9000FAF149 /* safari in Resources */ = {isa = PBXBuildFile; fileRef = FCFDA84225CBBE9000FAF149 /* safari */; };
+		FCFDA85425CBBE9000FAF149 /* CONTRIBUTING.md in Resources */ = {isa = PBXBuildFile; fileRef = FCFDA84325CBBE9000FAF149 /* CONTRIBUTING.md */; };
+		FCFDA85525CBBE9000FAF149 /* icons in Resources */ = {isa = PBXBuildFile; fileRef = FCFDA84425CBBE9000FAF149 /* icons */; };
+		FCFDA85625CBBE9000FAF149 /* manifest.json in Resources */ = {isa = PBXBuildFile; fileRef = FCFDA84525CBBE9000FAF149 /* manifest.json */; };
+		FCFDA85725CBBE9000FAF149 /* gulpfile.js in Resources */ = {isa = PBXBuildFile; fileRef = FCFDA84625CBBE9000FAF149 /* gulpfile.js */; };
+		FCFDA85825CBBE9000FAF149 /* _locales in Resources */ = {isa = PBXBuildFile; fileRef = FCFDA84725CBBE9000FAF149 /* _locales */; };
+		FCFDA85925CBBE9000FAF149 /* README-reviewers.md in Resources */ = {isa = PBXBuildFile; fileRef = FCFDA84825CBBE9000FAF149 /* README-reviewers.md */; };
+		FCFDA85A25CBBE9000FAF149 /* pages in Resources */ = {isa = PBXBuildFile; fileRef = FCFDA84925CBBE9000FAF149 /* pages */; };
+		FDEFEB105375BA8964DB6FF0 /* Pods_Disable_JavaScript_Extension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F83B86B6EF858B6995247EA8 /* Pods_Disable_JavaScript_Extension.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		FCD6C7E025CBE6BA00C34902 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FCFDA80925CBBE8300FAF149 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FCD6C7D625CBE6BA00C34902;
+			remoteInfo = DisableJavascriptBlocker;
+		};
+		FCFDA82525CBBE8B00FAF149 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FCFDA80925CBBE8300FAF149 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FCFDA82225CBBE8B00FAF149;
+			remoteInfo = "Disable JavaScript Extension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		FCFDA83425CBBE8B00FAF149 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				FCFDA82425CBBE8B00FAF149 /* Disable JavaScript Extension.appex in Embed App Extensions */,
+				FCD6C7E225CBE6BA00C34902 /* DisableJavascriptBlocker.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		007415940812DE8CFEA142B4 /* Pods-Disable JavaScript.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Disable JavaScript.debug.xcconfig"; path = "Target Support Files/Pods-Disable JavaScript/Pods-Disable JavaScript.debug.xcconfig"; sourceTree = "<group>"; };
+		019905EE7BC8596B0F284C99 /* Pods-DisableJavascriptBlocker.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DisableJavascriptBlocker.debug.xcconfig"; path = "Target Support Files/Pods-DisableJavascriptBlocker/Pods-DisableJavascriptBlocker.debug.xcconfig"; sourceTree = "<group>"; };
+		116D58E46577AC74D2825E70 /* Pods-Disable JavaScript.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Disable JavaScript.release.xcconfig"; path = "Target Support Files/Pods-Disable JavaScript/Pods-Disable JavaScript.release.xcconfig"; sourceTree = "<group>"; };
+		198644CDA9AFC64523394499 /* Pods-DisableJavascriptBlocker.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DisableJavascriptBlocker.release.xcconfig"; path = "Target Support Files/Pods-DisableJavascriptBlocker/Pods-DisableJavascriptBlocker.release.xcconfig"; sourceTree = "<group>"; };
+		20A9E1934EB4703EE125AC71 /* Pods-Disable JavaScript Extension.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Disable JavaScript Extension.release.xcconfig"; path = "Target Support Files/Pods-Disable JavaScript Extension/Pods-Disable JavaScript Extension.release.xcconfig"; sourceTree = "<group>"; };
+		63553DF9EC406E6E09B4D215 /* Pods_Disable_JavaScript.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Disable_JavaScript.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		86F3A2DAC0D4004D7C061272 /* Pods_DisableJavascriptBlocker.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DisableJavascriptBlocker.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BDEB2C856AC6094F1E257FF4 /* Pods-Disable JavaScript Extension.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Disable JavaScript Extension.debug.xcconfig"; path = "Target Support Files/Pods-Disable JavaScript Extension/Pods-Disable JavaScript Extension.debug.xcconfig"; sourceTree = "<group>"; };
+		F83B86B6EF858B6995247EA8 /* Pods_Disable_JavaScript_Extension.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Disable_JavaScript_Extension.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FCD6C7D725CBE6BA00C34902 /* DisableJavascriptBlocker.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = DisableJavascriptBlocker.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		FCD6C7DA25CBE6BA00C34902 /* blockerList.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = blockerList.json; sourceTree = "<group>"; };
+		FCD6C7DC25CBE6BA00C34902 /* ContentBlockerRequestHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentBlockerRequestHandler.swift; sourceTree = "<group>"; };
+		FCD6C7DE25CBE6BA00C34902 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FCD6C7DF25CBE6BA00C34902 /* DisableJavascriptBlocker.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = DisableJavascriptBlocker.entitlements; sourceTree = "<group>"; };
+		FCFDA81125CBBE8300FAF149 /* Disable JavaScript.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Disable JavaScript.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FCFDA81425CBBE8300FAF149 /* Disable_JavaScript.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Disable_JavaScript.entitlements; sourceTree = "<group>"; };
+		FCFDA81525CBBE8300FAF149 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		FCFDA81825CBBE8300FAF149 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		FCFDA81A25CBBE8300FAF149 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		FCFDA81C25CBBE8A00FAF149 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FCFDA81E25CBBE8A00FAF149 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FCFDA82325CBBE8B00FAF149 /* Disable JavaScript Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Disable JavaScript Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FCFDA82825CBBE8B00FAF149 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		FCFDA82B25CBBE8B00FAF149 /* SafariWebExtensionHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafariWebExtensionHandler.swift; sourceTree = "<group>"; };
+		FCFDA82D25CBBE8B00FAF149 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FCFDA82E25CBBE8B00FAF149 /* Disable_JavaScript_Extension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Disable_JavaScript_Extension.entitlements; sourceTree = "<group>"; };
+		FCFDA83925CBBE9000FAF149 /* background */ = {isa = PBXFileReference; lastKnownFileType = folder; name = background; path = ../../../background; sourceTree = "<group>"; };
+		FCFDA83A25CBBE9000FAF149 /* push-to-mobile.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; name = "push-to-mobile.sh"; path = "../../../push-to-mobile.sh"; sourceTree = "<group>"; };
+		FCFDA83B25CBBE9000FAF149 /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; name = LICENSE; path = ../../../LICENSE; sourceTree = "<group>"; };
+		FCFDA83C25CBBE9000FAF149 /* create-packages.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; name = "create-packages.sh"; path = "../../../create-packages.sh"; sourceTree = "<group>"; };
+		FCFDA83D25CBBE9000FAF149 /* manifest-gecko.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = "manifest-gecko.json"; path = "../../../manifest-gecko.json"; sourceTree = "<group>"; };
+		FCFDA83E25CBBE9000FAF149 /* node_modules */ = {isa = PBXFileReference; lastKnownFileType = folder; name = node_modules; path = ../../../node_modules; sourceTree = "<group>"; };
+		FCFDA83F25CBBE9000FAF149 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../../../README.md; sourceTree = "<group>"; };
+		FCFDA84025CBBE9000FAF149 /* package-lock.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = "package-lock.json"; path = "../../../package-lock.json"; sourceTree = "<group>"; };
+		FCFDA84125CBBE9000FAF149 /* package.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = package.json; path = ../../../package.json; sourceTree = "<group>"; };
+		FCFDA84225CBBE9000FAF149 /* safari */ = {isa = PBXFileReference; lastKnownFileType = folder; name = safari; path = ../..; sourceTree = "<group>"; };
+		FCFDA84325CBBE9000FAF149 /* CONTRIBUTING.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; name = CONTRIBUTING.md; path = ../../../CONTRIBUTING.md; sourceTree = "<group>"; };
+		FCFDA84425CBBE9000FAF149 /* icons */ = {isa = PBXFileReference; lastKnownFileType = folder; name = icons; path = ../../../icons; sourceTree = "<group>"; };
+		FCFDA84525CBBE9000FAF149 /* manifest.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = manifest.json; path = ../../../manifest.json; sourceTree = "<group>"; };
+		FCFDA84625CBBE9000FAF149 /* gulpfile.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; name = gulpfile.js; path = ../../../gulpfile.js; sourceTree = "<group>"; };
+		FCFDA84725CBBE9000FAF149 /* _locales */ = {isa = PBXFileReference; lastKnownFileType = folder; name = _locales; path = ../../../_locales; sourceTree = "<group>"; };
+		FCFDA84825CBBE9000FAF149 /* README-reviewers.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; name = "README-reviewers.md"; path = "../../../README-reviewers.md"; sourceTree = "<group>"; };
+		FCFDA84925CBBE9000FAF149 /* pages */ = {isa = PBXFileReference; lastKnownFileType = folder; name = pages; path = ../../../pages; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FCD6C7D425CBE6BA00C34902 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FCD6C7D825CBE6BA00C34902 /* Cocoa.framework in Frameworks */,
+				A2A6976B4BDB539E87E05FFD /* Pods_DisableJavascriptBlocker.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FCFDA80E25CBBE8300FAF149 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0722C2C73F8595327988A21E /* Pods_Disable_JavaScript.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FCFDA82025CBBE8B00FAF149 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FCFDA82925CBBE8B00FAF149 /* Cocoa.framework in Frameworks */,
+				FDEFEB105375BA8964DB6FF0 /* Pods_Disable_JavaScript_Extension.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		21647C4099B4AC8778654C34 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				007415940812DE8CFEA142B4 /* Pods-Disable JavaScript.debug.xcconfig */,
+				116D58E46577AC74D2825E70 /* Pods-Disable JavaScript.release.xcconfig */,
+				BDEB2C856AC6094F1E257FF4 /* Pods-Disable JavaScript Extension.debug.xcconfig */,
+				20A9E1934EB4703EE125AC71 /* Pods-Disable JavaScript Extension.release.xcconfig */,
+				019905EE7BC8596B0F284C99 /* Pods-DisableJavascriptBlocker.debug.xcconfig */,
+				198644CDA9AFC64523394499 /* Pods-DisableJavascriptBlocker.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		FCD6C7D925CBE6BA00C34902 /* DisableJavascriptBlocker */ = {
+			isa = PBXGroup;
+			children = (
+				FCD6C7DA25CBE6BA00C34902 /* blockerList.json */,
+				FCD6C7DC25CBE6BA00C34902 /* ContentBlockerRequestHandler.swift */,
+				FCD6C7DE25CBE6BA00C34902 /* Info.plist */,
+				FCD6C7DF25CBE6BA00C34902 /* DisableJavascriptBlocker.entitlements */,
+			);
+			path = DisableJavascriptBlocker;
+			sourceTree = "<group>";
+		};
+		FCFDA80825CBBE8300FAF149 = {
+			isa = PBXGroup;
+			children = (
+				FCFDA81325CBBE8300FAF149 /* Disable JavaScript */,
+				FCFDA82A25CBBE8B00FAF149 /* Disable JavaScript Extension */,
+				FCD6C7D925CBE6BA00C34902 /* DisableJavascriptBlocker */,
+				FCFDA82725CBBE8B00FAF149 /* Frameworks */,
+				FCFDA81225CBBE8300FAF149 /* Products */,
+				21647C4099B4AC8778654C34 /* Pods */,
+			);
+			sourceTree = "<group>";
+		};
+		FCFDA81225CBBE8300FAF149 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FCFDA81125CBBE8300FAF149 /* Disable JavaScript.app */,
+				FCFDA82325CBBE8B00FAF149 /* Disable JavaScript Extension.appex */,
+				FCD6C7D725CBE6BA00C34902 /* DisableJavascriptBlocker.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FCFDA81325CBBE8300FAF149 /* Disable JavaScript */ = {
+			isa = PBXGroup;
+			children = (
+				FCFDA81425CBBE8300FAF149 /* Disable_JavaScript.entitlements */,
+				FCFDA81525CBBE8300FAF149 /* AppDelegate.swift */,
+				FCFDA81725CBBE8300FAF149 /* Main.storyboard */,
+				FCFDA81A25CBBE8300FAF149 /* ViewController.swift */,
+				FCFDA81C25CBBE8A00FAF149 /* Assets.xcassets */,
+				FCFDA81E25CBBE8A00FAF149 /* Info.plist */,
+			);
+			path = "Disable JavaScript";
+			sourceTree = "<group>";
+		};
+		FCFDA82725CBBE8B00FAF149 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FCFDA82825CBBE8B00FAF149 /* Cocoa.framework */,
+				63553DF9EC406E6E09B4D215 /* Pods_Disable_JavaScript.framework */,
+				F83B86B6EF858B6995247EA8 /* Pods_Disable_JavaScript_Extension.framework */,
+				86F3A2DAC0D4004D7C061272 /* Pods_DisableJavascriptBlocker.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FCFDA82A25CBBE8B00FAF149 /* Disable JavaScript Extension */ = {
+			isa = PBXGroup;
+			children = (
+				FCFDA83825CBBE9000FAF149 /* Resources */,
+				FCFDA82B25CBBE8B00FAF149 /* SafariWebExtensionHandler.swift */,
+				FCFDA82D25CBBE8B00FAF149 /* Info.plist */,
+				FCFDA82E25CBBE8B00FAF149 /* Disable_JavaScript_Extension.entitlements */,
+			);
+			path = "Disable JavaScript Extension";
+			sourceTree = "<group>";
+		};
+		FCFDA83825CBBE9000FAF149 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				FCFDA83925CBBE9000FAF149 /* background */,
+				FCFDA83A25CBBE9000FAF149 /* push-to-mobile.sh */,
+				FCFDA83B25CBBE9000FAF149 /* LICENSE */,
+				FCFDA83C25CBBE9000FAF149 /* create-packages.sh */,
+				FCFDA83D25CBBE9000FAF149 /* manifest-gecko.json */,
+				FCFDA83E25CBBE9000FAF149 /* node_modules */,
+				FCFDA83F25CBBE9000FAF149 /* README.md */,
+				FCFDA84025CBBE9000FAF149 /* package-lock.json */,
+				FCFDA84125CBBE9000FAF149 /* package.json */,
+				FCFDA84225CBBE9000FAF149 /* safari */,
+				FCFDA84325CBBE9000FAF149 /* CONTRIBUTING.md */,
+				FCFDA84425CBBE9000FAF149 /* icons */,
+				FCFDA84525CBBE9000FAF149 /* manifest.json */,
+				FCFDA84625CBBE9000FAF149 /* gulpfile.js */,
+				FCFDA84725CBBE9000FAF149 /* _locales */,
+				FCFDA84825CBBE9000FAF149 /* README-reviewers.md */,
+				FCFDA84925CBBE9000FAF149 /* pages */,
+			);
+			name = Resources;
+			path = "Disable JavaScript Extension";
+			sourceTree = SOURCE_ROOT;
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FCD6C7D625CBE6BA00C34902 /* DisableJavascriptBlocker */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FCD6C7E525CBE6BA00C34902 /* Build configuration list for PBXNativeTarget "DisableJavascriptBlocker" */;
+			buildPhases = (
+				D37D7D264B3344D626B2BEB1 /* [CP] Check Pods Manifest.lock */,
+				FCD6C7D325CBE6BA00C34902 /* Sources */,
+				FCD6C7D425CBE6BA00C34902 /* Frameworks */,
+				FCD6C7D525CBE6BA00C34902 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DisableJavascriptBlocker;
+			productName = DisableJavascriptBlocker;
+			productReference = FCD6C7D725CBE6BA00C34902 /* DisableJavascriptBlocker.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		FCFDA81025CBBE8300FAF149 /* Disable JavaScript */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FCFDA83525CBBE8B00FAF149 /* Build configuration list for PBXNativeTarget "Disable JavaScript" */;
+			buildPhases = (
+				E320B32CAD6C2E53AE328256 /* [CP] Check Pods Manifest.lock */,
+				FCFDA80D25CBBE8300FAF149 /* Sources */,
+				FCFDA80E25CBBE8300FAF149 /* Frameworks */,
+				FCFDA80F25CBBE8300FAF149 /* Resources */,
+				FCFDA83425CBBE8B00FAF149 /* Embed App Extensions */,
+				B2612E111E5BDDEE4E8E357C /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FCFDA82625CBBE8B00FAF149 /* PBXTargetDependency */,
+				FCD6C7E125CBE6BA00C34902 /* PBXTargetDependency */,
+			);
+			name = "Disable JavaScript";
+			productName = "Disable JavaScript";
+			productReference = FCFDA81125CBBE8300FAF149 /* Disable JavaScript.app */;
+			productType = "com.apple.product-type.application";
+		};
+		FCFDA82225CBBE8B00FAF149 /* Disable JavaScript Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FCFDA83125CBBE8B00FAF149 /* Build configuration list for PBXNativeTarget "Disable JavaScript Extension" */;
+			buildPhases = (
+				2C3FB2C4A39818ACA34522D2 /* [CP] Check Pods Manifest.lock */,
+				FCFDA81F25CBBE8B00FAF149 /* Sources */,
+				FCFDA82025CBBE8B00FAF149 /* Frameworks */,
+				FCFDA82125CBBE8B00FAF149 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Disable JavaScript Extension";
+			productName = "Disable JavaScript Extension";
+			productReference = FCFDA82325CBBE8B00FAF149 /* Disable JavaScript Extension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FCFDA80925CBBE8300FAF149 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1230;
+				LastUpgradeCheck = 1230;
+				TargetAttributes = {
+					FCD6C7D625CBE6BA00C34902 = {
+						CreatedOnToolsVersion = 12.3;
+					};
+					FCFDA81025CBBE8300FAF149 = {
+						CreatedOnToolsVersion = 12.3;
+					};
+					FCFDA82225CBBE8B00FAF149 = {
+						CreatedOnToolsVersion = 12.3;
+					};
+				};
+			};
+			buildConfigurationList = FCFDA80C25CBBE8300FAF149 /* Build configuration list for PBXProject "Disable JavaScript" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FCFDA80825CBBE8300FAF149;
+			productRefGroup = FCFDA81225CBBE8300FAF149 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FCFDA81025CBBE8300FAF149 /* Disable JavaScript */,
+				FCFDA82225CBBE8B00FAF149 /* Disable JavaScript Extension */,
+				FCD6C7D625CBE6BA00C34902 /* DisableJavascriptBlocker */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FCD6C7D525CBE6BA00C34902 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FCD6C7DB25CBE6BA00C34902 /* blockerList.json in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FCFDA80F25CBBE8300FAF149 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FCFDA81D25CBBE8A00FAF149 /* Assets.xcassets in Resources */,
+				FCFDA81925CBBE8300FAF149 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FCFDA82125CBBE8B00FAF149 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FCFDA85725CBBE9000FAF149 /* gulpfile.js in Resources */,
+				FCFDA85325CBBE9000FAF149 /* safari in Resources */,
+				FCFDA84C25CBBE9000FAF149 /* LICENSE in Resources */,
+				FCFDA85825CBBE9000FAF149 /* _locales in Resources */,
+				FCFDA85A25CBBE9000FAF149 /* pages in Resources */,
+				FCFDA84A25CBBE9000FAF149 /* background in Resources */,
+				FCFDA85625CBBE9000FAF149 /* manifest.json in Resources */,
+				FCFDA85225CBBE9000FAF149 /* package.json in Resources */,
+				FCFDA84E25CBBE9000FAF149 /* manifest-gecko.json in Resources */,
+				FCFDA85425CBBE9000FAF149 /* CONTRIBUTING.md in Resources */,
+				FCFDA85925CBBE9000FAF149 /* README-reviewers.md in Resources */,
+				FCFDA85125CBBE9000FAF149 /* package-lock.json in Resources */,
+				FCFDA85025CBBE9000FAF149 /* README.md in Resources */,
+				FCFDA84B25CBBE9000FAF149 /* push-to-mobile.sh in Resources */,
+				FCFDA85525CBBE9000FAF149 /* icons in Resources */,
+				FCFDA84F25CBBE9000FAF149 /* node_modules in Resources */,
+				FCFDA84D25CBBE9000FAF149 /* create-packages.sh in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2C3FB2C4A39818ACA34522D2 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Disable JavaScript Extension-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B2612E111E5BDDEE4E8E357C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Disable JavaScript/Pods-Disable JavaScript-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Disable JavaScript/Pods-Disable JavaScript-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Disable JavaScript/Pods-Disable JavaScript-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D37D7D264B3344D626B2BEB1 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-DisableJavascriptBlocker-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E320B32CAD6C2E53AE328256 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Disable JavaScript-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FCD6C7D325CBE6BA00C34902 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FCD6C7DD25CBE6BA00C34902 /* ContentBlockerRequestHandler.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FCFDA80D25CBBE8300FAF149 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FCFDA81B25CBBE8300FAF149 /* ViewController.swift in Sources */,
+				FCFDA81625CBBE8300FAF149 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FCFDA81F25CBBE8B00FAF149 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FCFDA82C25CBBE8B00FAF149 /* SafariWebExtensionHandler.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FCD6C7E125CBE6BA00C34902 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FCD6C7D625CBE6BA00C34902 /* DisableJavascriptBlocker */;
+			targetProxy = FCD6C7E025CBE6BA00C34902 /* PBXContainerItemProxy */;
+		};
+		FCFDA82625CBBE8B00FAF149 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FCFDA82225CBBE8B00FAF149 /* Disable JavaScript Extension */;
+			targetProxy = FCFDA82525CBBE8B00FAF149 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		FCFDA81725CBBE8300FAF149 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FCFDA81825CBBE8300FAF149 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FCD6C7E325CBE6BA00C34902 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 019905EE7BC8596B0F284C99 /* Pods-DisableJavascriptBlocker.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = DisableJavascriptBlocker/DisableJavascriptBlocker.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = DisableJavascriptBlocker/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.github.dpacassi.Disable-JavaScript.DisableJavascriptBlocker";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		FCD6C7E425CBE6BA00C34902 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 198644CDA9AFC64523394499 /* Pods-DisableJavascriptBlocker.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = DisableJavascriptBlocker/DisableJavascriptBlocker.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = DisableJavascriptBlocker/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.github.dpacassi.Disable-JavaScript.DisableJavascriptBlocker";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		FCFDA82F25CBBE8B00FAF149 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 11.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		FCFDA83025CBBE8B00FAF149 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 11.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		FCFDA83225CBBE8B00FAF149 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BDEB2C856AC6094F1E257FF4 /* Pods-Disable JavaScript Extension.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "Disable JavaScript Extension/Disable_JavaScript_Extension.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Disable JavaScript Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.github.dpacassi.Disable-JavaScript.Extension";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		FCFDA83325CBBE8B00FAF149 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 20A9E1934EB4703EE125AC71 /* Pods-Disable JavaScript Extension.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "Disable JavaScript Extension/Disable_JavaScript_Extension.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Disable JavaScript Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.github.dpacassi.Disable-JavaScript.Extension";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		FCFDA83625CBBE8B00FAF149 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 007415940812DE8CFEA142B4 /* Pods-Disable JavaScript.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "Disable JavaScript/Disable_JavaScript.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = "Disable JavaScript/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.github.dpacassi.Disable-JavaScript";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		FCFDA83725CBBE8B00FAF149 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 116D58E46577AC74D2825E70 /* Pods-Disable JavaScript.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "Disable JavaScript/Disable_JavaScript.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = "Disable JavaScript/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.github.dpacassi.Disable-JavaScript";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FCD6C7E525CBE6BA00C34902 /* Build configuration list for PBXNativeTarget "DisableJavascriptBlocker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FCD6C7E325CBE6BA00C34902 /* Debug */,
+				FCD6C7E425CBE6BA00C34902 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FCFDA80C25CBBE8300FAF149 /* Build configuration list for PBXProject "Disable JavaScript" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FCFDA82F25CBBE8B00FAF149 /* Debug */,
+				FCFDA83025CBBE8B00FAF149 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FCFDA83125CBBE8B00FAF149 /* Build configuration list for PBXNativeTarget "Disable JavaScript Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FCFDA83225CBBE8B00FAF149 /* Debug */,
+				FCFDA83325CBBE8B00FAF149 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FCFDA83525CBBE8B00FAF149 /* Build configuration list for PBXNativeTarget "Disable JavaScript" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FCFDA83625CBBE8B00FAF149 /* Debug */,
+				FCFDA83725CBBE8B00FAF149 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FCFDA80925CBBE8300FAF149 /* Project object */;
+}

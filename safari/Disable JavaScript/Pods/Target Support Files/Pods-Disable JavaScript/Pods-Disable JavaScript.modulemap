@@ -1,0 +1,6 @@
+framework module Pods_Disable_JavaScript {
+  umbrella header "Pods-Disable JavaScript-umbrella.h"
+
+  export *
+  module * { export * }
+}

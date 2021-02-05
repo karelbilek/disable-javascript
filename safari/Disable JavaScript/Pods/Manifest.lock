@@ -1,0 +1,30 @@
+PODS:
+  - BBPortal (0.1.2):
+    - DAFileMonitor
+  - DAFileMonitor (0.1.1)
+
+DEPENDENCIES:
+  - BBPortal (from `https://github.com/karelbilek/BBPortal.git`)
+  - DAFileMonitor (from `https://github.com/karelbilek/DAFileMonitor.git`)
+
+EXTERNAL SOURCES:
+  BBPortal:
+    :git: https://github.com/karelbilek/BBPortal.git
+  DAFileMonitor:
+    :git: https://github.com/karelbilek/DAFileMonitor.git
+
+CHECKOUT OPTIONS:
+  BBPortal:
+    :commit: d47cce440d3a5486ce3daefb967f35cc819a3cd1
+    :git: https://github.com/karelbilek/BBPortal.git
+  DAFileMonitor:
+    :commit: 43ec7304865e3758ab023e938fb484b2a7269169
+    :git: https://github.com/karelbilek/DAFileMonitor.git
+
+SPEC CHECKSUMS:
+  BBPortal: 790196476716949590a05a229c68fe68d0e3cc6c
+  DAFileMonitor: e9037eebbe01c6a69e76e3dbe426feec8f2ea97e
+
+PODFILE CHECKSUM: c6409f20a5239c5d58a95e8eefffbfa3989aedaf
+
+COCOAPODS: 1.10.1

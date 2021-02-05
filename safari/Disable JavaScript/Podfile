@@ -1,0 +1,32 @@
+# Uncomment the next line to define a global platform for your project
+platform :osx, '11.1'
+
+target 'Disable JavaScript' do
+  # Comment the next line if you don't want to use dynamic frameworks
+  use_frameworks!
+
+  # Pods for Disable JavaScript
+
+  pod 'DAFileMonitor', :git => 'https://github.com/karelbilek/DAFileMonitor.git'
+  pod 'BBPortal', :git => 'https://github.com/karelbilek/BBPortal.git'
+end
+
+target 'Disable JavaScript Extension' do
+  # Comment the next line if you don't want to use dynamic frameworks
+  use_frameworks!
+
+  # Pods for Disable JavaScript Extension
+  pod 'DAFileMonitor', :git => 'https://github.com/karelbilek/DAFileMonitor.git'
+  pod 'BBPortal', :git => 'https://github.com/karelbilek/BBPortal.git'
+
+end
+
+target 'DisableJavascriptBlocker' do
+  # Comment the next line if you don't want to use dynamic frameworks
+  use_frameworks!
+
+  # Pods for DisableJavascriptBlocker
+  pod 'DAFileMonitor', :git => 'https://github.com/karelbilek/DAFileMonitor.git'
+  pod 'BBPortal', :git => 'https://github.com/karelbilek/BBPortal.git'
+
+end

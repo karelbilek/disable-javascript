@@ -1,0 +1,12 @@
+[
+    {
+        "action": {
+            "type": "block"
+        },
+        "trigger": {
+            "url-filter": ".*",
+            "if-top-url": ["idddnes.cz"],
+            "resource-type": ["script"]
+        }
+    }
+]
