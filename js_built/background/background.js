@@ -108,6 +108,8 @@ console.log("help")
    * Returns the correct app icon depending on the browser and JS status.
    */
   function getIcon(jsEnabled, tabId, url) {
+    console.log("getIcon", jsEnabled, tabId, url)
+
     var icon = {};
 
 
@@ -202,22 +204,24 @@ console.log("help")
   /**
    * Checks if JS is enabled for a given host and tab.
    */
-  function isJSEnabled(host, tabId) {
+  async function isJSEnabled(host, tabId) {
+      console.log("isJSEnabled", host)
        
-    return new Promise(function(resolve) {
-      getDefaultState().then(function(defaultState) {
+      const defaultState = await getDefaultState()
+      console.log("defaultstate ", defaultState)
+    
             // Disable behavior by domain.
-            isListedHost(host).then(function(listed) {
-              var jsEnabled = false;
+      const listed = await isListedHost(host);
+      console.log("defaultstate ", defaultState)
 
-              if ((defaultState === 'on' && !listed) || (defaultState !== 'on' && listed)) {
-                jsEnabled = true;
-              }
+      var jsEnabled = false;
 
-              resolve(jsEnabled);
-            });
-      });
-    });
+      if ((defaultState === 'on' && !listed) || (defaultState !== 'on' && listed)) {
+      console.log("ya")
+        return true;
+      }
+      console.log("nah")
+      return false;
   }
 
   /**
@@ -425,25 +429,35 @@ console.log("help")
    */
   browser.tabs.onUpdated.addListener(function(tabId, changeInfo, tab) {
     var url = changeInfo.url || tab.url;
+    console.log("tabs on updated", tabId, changeInfo, tab, url)
 
     if (!isApplicableUrl(url)) {
+      console.log("is not applicable")
       // Don't do anything if this is not an applicable url.
       return;
     }
+      console.log("is applicable")
 
-    if (typeof changeInfo.status === 'undefined' || changeInfo.status !== 'complete') {
+    /*if (typeof changeInfo.status === 'undefined' || changeInfo.status !== 'complete') {
+      console.log("is not complete")
       // onUpdated gets fired multiple times on tab change, only listen to the
       // complete state.
       return;
-    }
+    }*/
+      console.log("is complete, will read host")
 
     var host = new URL(url).hostname;
+      console.log("is host ",host)
 
     isJSEnabled(host, tabId).then(function(jsEnabled) {
+      console.log("js enabled ", jsEnabled)
+
       if (typeof browser.browserAction.setIcon !== 'undefined') {
+        console.log("cetting icon")
         browser.browserAction.setIcon(getIcon(jsEnabled, tabId, url));
       }
 
+        console.log("gott toggl")
       browser.browserAction.setTitle({
         title: (jsEnabled ? 'Disable' : 'Enable') + ' Javascript',
         tabId: tabId
@@ -451,6 +465,7 @@ console.log("help")
 
       // Show <noscript> tags if JS is disabled.
       if (!jsEnabled) {
+        console.log("showing script")
         browser.tabs.executeScript(
           tabId, {
           file: '/background/content.js'
