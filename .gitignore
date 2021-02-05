@@ -2,3 +2,4 @@
 disable-javascript@pacassi.ch.xpi
 js/node_modules
 js/node_modules/*
+*.swp
