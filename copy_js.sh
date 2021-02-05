@@ -1,12 +1,19 @@
 #!/bin/bash
 
+set -ex
+
 rm -rf js_built
-cp -r js js_build
+cp -r js js_built
 cd js_built
-rm -rf "*.git*" "*.zip*" "*.sh" "*.idea*" "*.DS_Store" "*node_modules*" "*manifest-gecko.json*" "*gulpfile.js*" "*package.json*" "*package-lock.json*" "*.md*" "pages/src/*"
-mv README-reviewers.md README.md
-zip -r "disable-javascript--with-source.zip" . -x "*.git*" "*.zip*" "*.sh" "*.idea*" "*.DS_Store" "*node_modules*" "*manifest-gecko.json*" "*CONTRIBUTING.md*" "pages/dist/*"
-git checkout README.md
-git checkout README-reviewers.md
-
-
+rm -rf *.git* 
+rm -rf *.zip* 
+rm -rf *.sh
+rm -rf *.idea* 
+rm -rf *.DS_Store
+rm -rf *node_modules* 
+rm -rf *manifest-gecko.json* 
+rm -rf *gulpfile.js*
+rm -rf *package.json*
+rm -rf *package-lock.json*
+rm -rf *.md*
+rm -rf pages/src/*

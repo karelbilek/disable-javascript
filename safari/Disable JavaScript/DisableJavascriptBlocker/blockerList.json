@@ -1,12 +1,1 @@
-[
-    {
-        "action": {
-            "type": "block"
-        },
-        "trigger": {
-            "url-filter": ".*",
-            "if-top-url": ["idddnes.cz"],
-            "resource-type": ["script"]
-        }
-    }
-]
+[{"action":{"type":"block"},"trigger":{"url-filter":".*","resource-type":["script"],"unless-top-url":["^https?://stackoverflow\\.com(/.*)?$","^https?://developer\\.mozilla\\.org(/.*)?$","^https?://www\\.idnes\\.cz(/.*)?$","^https?://github\\.com(/.*)?$"]}}]

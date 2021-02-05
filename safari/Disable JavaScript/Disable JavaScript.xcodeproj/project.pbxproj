@@ -3,12 +3,19 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		0722C2C73F8595327988A21E /* Pods_Disable_JavaScript.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 63553DF9EC406E6E09B4D215 /* Pods_Disable_JavaScript.framework */; };
 		A2A6976B4BDB539E87E05FFD /* Pods_DisableJavascriptBlocker.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 86F3A2DAC0D4004D7C061272 /* Pods_DisableJavascriptBlocker.framework */; };
+		FC87D45025CD319C00B3A5CA /* icons in Resources */ = {isa = PBXBuildFile; fileRef = FC87D44825CD319B00B3A5CA /* icons */; };
+		FC87D45225CD319C00B3A5CA /* background in Resources */ = {isa = PBXBuildFile; fileRef = FC87D44A25CD319B00B3A5CA /* background */; };
+		FC87D45325CD319C00B3A5CA /* pnpm-lock.yaml in Resources */ = {isa = PBXBuildFile; fileRef = FC87D44B25CD319B00B3A5CA /* pnpm-lock.yaml */; };
+		FC87D45425CD319C00B3A5CA /* pages in Resources */ = {isa = PBXBuildFile; fileRef = FC87D44C25CD319B00B3A5CA /* pages */; };
+		FC87D45525CD319C00B3A5CA /* _locales in Resources */ = {isa = PBXBuildFile; fileRef = FC87D44D25CD319C00B3A5CA /* _locales */; };
+		FC87D45625CD319C00B3A5CA /* manifest.json in Resources */ = {isa = PBXBuildFile; fileRef = FC87D44E25CD319C00B3A5CA /* manifest.json */; };
+		FC87D45725CD319C00B3A5CA /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = FC87D44F25CD319C00B3A5CA /* LICENSE */; };
 		FCD6C7D825CBE6BA00C34902 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FCFDA82825CBBE8B00FAF149 /* Cocoa.framework */; };
 		FCD6C7DB25CBE6BA00C34902 /* blockerList.json in Resources */ = {isa = PBXBuildFile; fileRef = FCD6C7DA25CBE6BA00C34902 /* blockerList.json */; };
 		FCD6C7DD25CBE6BA00C34902 /* ContentBlockerRequestHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCD6C7DC25CBE6BA00C34902 /* ContentBlockerRequestHandler.swift */; };
@@ -20,23 +27,6 @@
 		FCFDA82425CBBE8B00FAF149 /* Disable JavaScript Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = FCFDA82325CBBE8B00FAF149 /* Disable JavaScript Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		FCFDA82925CBBE8B00FAF149 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FCFDA82825CBBE8B00FAF149 /* Cocoa.framework */; };
 		FCFDA82C25CBBE8B00FAF149 /* SafariWebExtensionHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCFDA82B25CBBE8B00FAF149 /* SafariWebExtensionHandler.swift */; };
-		FCFDA84A25CBBE9000FAF149 /* background in Resources */ = {isa = PBXBuildFile; fileRef = FCFDA83925CBBE9000FAF149 /* background */; };
-		FCFDA84B25CBBE9000FAF149 /* push-to-mobile.sh in Resources */ = {isa = PBXBuildFile; fileRef = FCFDA83A25CBBE9000FAF149 /* push-to-mobile.sh */; };
-		FCFDA84C25CBBE9000FAF149 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = FCFDA83B25CBBE9000FAF149 /* LICENSE */; };
-		FCFDA84D25CBBE9000FAF149 /* create-packages.sh in Resources */ = {isa = PBXBuildFile; fileRef = FCFDA83C25CBBE9000FAF149 /* create-packages.sh */; };
-		FCFDA84E25CBBE9000FAF149 /* manifest-gecko.json in Resources */ = {isa = PBXBuildFile; fileRef = FCFDA83D25CBBE9000FAF149 /* manifest-gecko.json */; };
-		FCFDA84F25CBBE9000FAF149 /* node_modules in Resources */ = {isa = PBXBuildFile; fileRef = FCFDA83E25CBBE9000FAF149 /* node_modules */; };
-		FCFDA85025CBBE9000FAF149 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = FCFDA83F25CBBE9000FAF149 /* README.md */; };
-		FCFDA85125CBBE9000FAF149 /* package-lock.json in Resources */ = {isa = PBXBuildFile; fileRef = FCFDA84025CBBE9000FAF149 /* package-lock.json */; };
-		FCFDA85225CBBE9000FAF149 /* package.json in Resources */ = {isa = PBXBuildFile; fileRef = FCFDA84125CBBE9000FAF149 /* package.json */; };
-		FCFDA85325CBBE9000FAF149 /* safari in Resources */ = {isa = PBXBuildFile; fileRef = FCFDA84225CBBE9000FAF149 /* safari */; };
-		FCFDA85425CBBE9000FAF149 /* CONTRIBUTING.md in Resources */ = {isa = PBXBuildFile; fileRef = FCFDA84325CBBE9000FAF149 /* CONTRIBUTING.md */; };
-		FCFDA85525CBBE9000FAF149 /* icons in Resources */ = {isa = PBXBuildFile; fileRef = FCFDA84425CBBE9000FAF149 /* icons */; };
-		FCFDA85625CBBE9000FAF149 /* manifest.json in Resources */ = {isa = PBXBuildFile; fileRef = FCFDA84525CBBE9000FAF149 /* manifest.json */; };
-		FCFDA85725CBBE9000FAF149 /* gulpfile.js in Resources */ = {isa = PBXBuildFile; fileRef = FCFDA84625CBBE9000FAF149 /* gulpfile.js */; };
-		FCFDA85825CBBE9000FAF149 /* _locales in Resources */ = {isa = PBXBuildFile; fileRef = FCFDA84725CBBE9000FAF149 /* _locales */; };
-		FCFDA85925CBBE9000FAF149 /* README-reviewers.md in Resources */ = {isa = PBXBuildFile; fileRef = FCFDA84825CBBE9000FAF149 /* README-reviewers.md */; };
-		FCFDA85A25CBBE9000FAF149 /* pages in Resources */ = {isa = PBXBuildFile; fileRef = FCFDA84925CBBE9000FAF149 /* pages */; };
 		FDEFEB105375BA8964DB6FF0 /* Pods_Disable_JavaScript_Extension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F83B86B6EF858B6995247EA8 /* Pods_Disable_JavaScript_Extension.framework */; };
 /* End PBXBuildFile section */
 
@@ -82,6 +72,13 @@
 		86F3A2DAC0D4004D7C061272 /* Pods_DisableJavascriptBlocker.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DisableJavascriptBlocker.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BDEB2C856AC6094F1E257FF4 /* Pods-Disable JavaScript Extension.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Disable JavaScript Extension.debug.xcconfig"; path = "Target Support Files/Pods-Disable JavaScript Extension/Pods-Disable JavaScript Extension.debug.xcconfig"; sourceTree = "<group>"; };
 		F83B86B6EF858B6995247EA8 /* Pods_Disable_JavaScript_Extension.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Disable_JavaScript_Extension.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FC87D44825CD319B00B3A5CA /* icons */ = {isa = PBXFileReference; lastKnownFileType = folder; name = icons; path = ../../../../js_built/icons; sourceTree = "<group>"; };
+		FC87D44A25CD319B00B3A5CA /* background */ = {isa = PBXFileReference; lastKnownFileType = folder; name = background; path = ../../../../js_built/background; sourceTree = "<group>"; };
+		FC87D44B25CD319B00B3A5CA /* pnpm-lock.yaml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.yaml; name = "pnpm-lock.yaml"; path = "../../../../js_built/pnpm-lock.yaml"; sourceTree = "<group>"; };
+		FC87D44C25CD319B00B3A5CA /* pages */ = {isa = PBXFileReference; lastKnownFileType = folder; name = pages; path = ../../../../js_built/pages; sourceTree = "<group>"; };
+		FC87D44D25CD319C00B3A5CA /* _locales */ = {isa = PBXFileReference; lastKnownFileType = folder; name = _locales; path = ../../../../js_built/_locales; sourceTree = "<group>"; };
+		FC87D44E25CD319C00B3A5CA /* manifest.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = manifest.json; path = ../../../../js_built/manifest.json; sourceTree = "<group>"; };
+		FC87D44F25CD319C00B3A5CA /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = LICENSE; path = ../../../../js_built/LICENSE; sourceTree = "<group>"; };
 		FCD6C7D725CBE6BA00C34902 /* DisableJavascriptBlocker.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = DisableJavascriptBlocker.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		FCD6C7DA25CBE6BA00C34902 /* blockerList.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = blockerList.json; sourceTree = "<group>"; };
 		FCD6C7DC25CBE6BA00C34902 /* ContentBlockerRequestHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentBlockerRequestHandler.swift; sourceTree = "<group>"; };
@@ -99,23 +96,6 @@
 		FCFDA82B25CBBE8B00FAF149 /* SafariWebExtensionHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafariWebExtensionHandler.swift; sourceTree = "<group>"; };
 		FCFDA82D25CBBE8B00FAF149 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FCFDA82E25CBBE8B00FAF149 /* Disable_JavaScript_Extension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Disable_JavaScript_Extension.entitlements; sourceTree = "<group>"; };
-		FCFDA83925CBBE9000FAF149 /* background */ = {isa = PBXFileReference; lastKnownFileType = folder; name = background; path = ../../../background; sourceTree = "<group>"; };
-		FCFDA83A25CBBE9000FAF149 /* push-to-mobile.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; name = "push-to-mobile.sh"; path = "../../../push-to-mobile.sh"; sourceTree = "<group>"; };
-		FCFDA83B25CBBE9000FAF149 /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; name = LICENSE; path = ../../../LICENSE; sourceTree = "<group>"; };
-		FCFDA83C25CBBE9000FAF149 /* create-packages.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; name = "create-packages.sh"; path = "../../../create-packages.sh"; sourceTree = "<group>"; };
-		FCFDA83D25CBBE9000FAF149 /* manifest-gecko.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = "manifest-gecko.json"; path = "../../../manifest-gecko.json"; sourceTree = "<group>"; };
-		FCFDA83E25CBBE9000FAF149 /* node_modules */ = {isa = PBXFileReference; lastKnownFileType = folder; name = node_modules; path = ../../../node_modules; sourceTree = "<group>"; };
-		FCFDA83F25CBBE9000FAF149 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../../../README.md; sourceTree = "<group>"; };
-		FCFDA84025CBBE9000FAF149 /* package-lock.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = "package-lock.json"; path = "../../../package-lock.json"; sourceTree = "<group>"; };
-		FCFDA84125CBBE9000FAF149 /* package.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = package.json; path = ../../../package.json; sourceTree = "<group>"; };
-		FCFDA84225CBBE9000FAF149 /* safari */ = {isa = PBXFileReference; lastKnownFileType = folder; name = safari; path = ../..; sourceTree = "<group>"; };
-		FCFDA84325CBBE9000FAF149 /* CONTRIBUTING.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; name = CONTRIBUTING.md; path = ../../../CONTRIBUTING.md; sourceTree = "<group>"; };
-		FCFDA84425CBBE9000FAF149 /* icons */ = {isa = PBXFileReference; lastKnownFileType = folder; name = icons; path = ../../../icons; sourceTree = "<group>"; };
-		FCFDA84525CBBE9000FAF149 /* manifest.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = manifest.json; path = ../../../manifest.json; sourceTree = "<group>"; };
-		FCFDA84625CBBE9000FAF149 /* gulpfile.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; name = gulpfile.js; path = ../../../gulpfile.js; sourceTree = "<group>"; };
-		FCFDA84725CBBE9000FAF149 /* _locales */ = {isa = PBXFileReference; lastKnownFileType = folder; name = _locales; path = ../../../_locales; sourceTree = "<group>"; };
-		FCFDA84825CBBE9000FAF149 /* README-reviewers.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; name = "README-reviewers.md"; path = "../../../README-reviewers.md"; sourceTree = "<group>"; };
-		FCFDA84925CBBE9000FAF149 /* pages */ = {isa = PBXFileReference; lastKnownFileType = folder; name = pages; path = ../../../pages; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -158,7 +138,6 @@
 				019905EE7BC8596B0F284C99 /* Pods-DisableJavascriptBlocker.debug.xcconfig */,
 				198644CDA9AFC64523394499 /* Pods-DisableJavascriptBlocker.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -171,6 +150,20 @@
 				FCD6C7DF25CBE6BA00C34902 /* DisableJavascriptBlocker.entitlements */,
 			);
 			path = DisableJavascriptBlocker;
+			sourceTree = "<group>";
+		};
+		FCE86BF325CD2A1000A923F8 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				FC87D44D25CD319C00B3A5CA /* _locales */,
+				FC87D44A25CD319B00B3A5CA /* background */,
+				FC87D44825CD319B00B3A5CA /* icons */,
+				FC87D44F25CD319C00B3A5CA /* LICENSE */,
+				FC87D44E25CD319C00B3A5CA /* manifest.json */,
+				FC87D44C25CD319B00B3A5CA /* pages */,
+				FC87D44B25CD319B00B3A5CA /* pnpm-lock.yaml */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 		FCFDA80825CBBE8300FAF149 = {
@@ -222,38 +215,13 @@
 		FCFDA82A25CBBE8B00FAF149 /* Disable JavaScript Extension */ = {
 			isa = PBXGroup;
 			children = (
-				FCFDA83825CBBE9000FAF149 /* Resources */,
+				FCE86BF325CD2A1000A923F8 /* Resources */,
 				FCFDA82B25CBBE8B00FAF149 /* SafariWebExtensionHandler.swift */,
 				FCFDA82D25CBBE8B00FAF149 /* Info.plist */,
 				FCFDA82E25CBBE8B00FAF149 /* Disable_JavaScript_Extension.entitlements */,
 			);
 			path = "Disable JavaScript Extension";
 			sourceTree = "<group>";
-		};
-		FCFDA83825CBBE9000FAF149 /* Resources */ = {
-			isa = PBXGroup;
-			children = (
-				FCFDA83925CBBE9000FAF149 /* background */,
-				FCFDA83A25CBBE9000FAF149 /* push-to-mobile.sh */,
-				FCFDA83B25CBBE9000FAF149 /* LICENSE */,
-				FCFDA83C25CBBE9000FAF149 /* create-packages.sh */,
-				FCFDA83D25CBBE9000FAF149 /* manifest-gecko.json */,
-				FCFDA83E25CBBE9000FAF149 /* node_modules */,
-				FCFDA83F25CBBE9000FAF149 /* README.md */,
-				FCFDA84025CBBE9000FAF149 /* package-lock.json */,
-				FCFDA84125CBBE9000FAF149 /* package.json */,
-				FCFDA84225CBBE9000FAF149 /* safari */,
-				FCFDA84325CBBE9000FAF149 /* CONTRIBUTING.md */,
-				FCFDA84425CBBE9000FAF149 /* icons */,
-				FCFDA84525CBBE9000FAF149 /* manifest.json */,
-				FCFDA84625CBBE9000FAF149 /* gulpfile.js */,
-				FCFDA84725CBBE9000FAF149 /* _locales */,
-				FCFDA84825CBBE9000FAF149 /* README-reviewers.md */,
-				FCFDA84925CBBE9000FAF149 /* pages */,
-			);
-			name = Resources;
-			path = "Disable JavaScript Extension";
-			sourceTree = SOURCE_ROOT;
 		};
 /* End PBXGroup section */
 
@@ -378,23 +346,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FCFDA85725CBBE9000FAF149 /* gulpfile.js in Resources */,
-				FCFDA85325CBBE9000FAF149 /* safari in Resources */,
-				FCFDA84C25CBBE9000FAF149 /* LICENSE in Resources */,
-				FCFDA85825CBBE9000FAF149 /* _locales in Resources */,
-				FCFDA85A25CBBE9000FAF149 /* pages in Resources */,
-				FCFDA84A25CBBE9000FAF149 /* background in Resources */,
-				FCFDA85625CBBE9000FAF149 /* manifest.json in Resources */,
-				FCFDA85225CBBE9000FAF149 /* package.json in Resources */,
-				FCFDA84E25CBBE9000FAF149 /* manifest-gecko.json in Resources */,
-				FCFDA85425CBBE9000FAF149 /* CONTRIBUTING.md in Resources */,
-				FCFDA85925CBBE9000FAF149 /* README-reviewers.md in Resources */,
-				FCFDA85125CBBE9000FAF149 /* package-lock.json in Resources */,
-				FCFDA85025CBBE9000FAF149 /* README.md in Resources */,
-				FCFDA84B25CBBE9000FAF149 /* push-to-mobile.sh in Resources */,
-				FCFDA85525CBBE9000FAF149 /* icons in Resources */,
-				FCFDA84F25CBBE9000FAF149 /* node_modules in Resources */,
-				FCFDA84D25CBBE9000FAF149 /* create-packages.sh in Resources */,
+				FC87D45525CD319C00B3A5CA /* _locales in Resources */,
+				FC87D45625CD319C00B3A5CA /* manifest.json in Resources */,
+				FC87D45725CD319C00B3A5CA /* LICENSE in Resources */,
+				FC87D45325CD319C00B3A5CA /* pnpm-lock.yaml in Resources */,
+				FC87D45425CD319C00B3A5CA /* pages in Resources */,
+				FC87D45025CD319C00B3A5CA /* icons in Resources */,
+				FC87D45225CD319C00B3A5CA /* background in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
